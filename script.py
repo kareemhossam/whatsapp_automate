@@ -19,8 +19,7 @@ for row in csvreader:
 for row in rows:
     print("Sending message to: " + row[0] + "on Phone number: " + row[1])
     w.sendwhatmsg_instantly(row[1], """
-يرجي الانضمام اي جروب فريق اشبال البحر المتوسط:
-link
+Enter Message Here
                             """,20)
     pyautogui.click(1050, 950)
     pyautogui.press("enter")
