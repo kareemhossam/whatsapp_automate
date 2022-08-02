@@ -15,13 +15,12 @@ rows = []
 for row in csvreader:
     if len(row[1]) != 0:
         rows.append(row)
-        # print(row)
-
-print(rows[0])
 
 for row in rows:
+    print("Sending message to: " + row[0] + "on Phone number: " + row[1])
     w.sendwhatmsg_instantly(row[1], """
-                            مساء الخير، يذكركم مجلس قيادة فريق الاشبال بعودة النشاط يوم الاربعاء القادم من الساعة 7م الي 9:30م علي ان يكون اجتماعات الموسم الصيفي يومي الاحد والاربعاء من كل اسبوع من الساعة 7م الي 9:30م
+يرجي الانضمام اي جروب فريق اشبال البحر المتوسط:
+link
                             """,20)
     pyautogui.click(1050, 950)
     pyautogui.press("enter")

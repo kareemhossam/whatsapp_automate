@@ -1,5 +1,2 @@
-broadcast.csv
-
-./broadcast.csv
-
+*.txt
 *.csv
